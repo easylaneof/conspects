@@ -1,0 +1,65 @@
+[404_message]
+other = "Эта страница не существует :("
+
+[404_back]
+other = "↳ Домой"
+
+[all_posts]
+other = "Все {{.Title}}"
+
+[last_updated]
+other = "Обновлен"
+
+[notes_count]
+other = "записей с этим тегом"
+
+[first_10]
+other = "отображать первые 10 результатов"
+
+[tag]
+other = "Тэг"
+
+[backlinks]
+other = "Бэклинк"
+
+[no_backlinks]
+other = "Нет бэклинков"
+
+[home]
+other = "Домашняя страница"
+
+[light_mode]
+other = "Светлая тема"
+
+[dark_mode]
+other = "Темная тема"
+
+[edit_source]
+other = "Изменить исходники"
+
+[interactive_graph]
+other = "Интерактивный граф"
+
+[search]
+other = "Поиск"
+
+[search_icon]
+other = "Поиск"
+
+[icon_search]
+other = "Поиск"
+
+[recent_notes]
+other = "Недавние заметки"
+
+[first_3_notes]
+other = "первые 3 {{ .notes }}"
+
+[search_for_something]
+other = "Поиск..."
+
+[toc]
+other = "Контент"
+
+[copyright]
+other = "Made by {{ .name }} using <a href=\"https://github.com/jackyzha0/quartz\">Quartz</a>, © {{ .year }}"

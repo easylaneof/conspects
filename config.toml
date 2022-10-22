@@ -1,5 +1,5 @@
 baseURL = "https://quartz.jzhao.xyz/"
-languageCode = "en-us"
+languageCode = "ru-ru"
 googleAnalytics = "G-XYFD95KB4J"
 relativeURLs = false
 disablePathToLower = true
@@ -10,6 +10,7 @@ ignoreFiles = [
 summaryLength = 20
 paginate = 10
 enableGitInfo = true
+defaultContentLanguage="ru"
 
 [markup]
     [markup.tableOfContents]
@@ -32,3 +33,10 @@ enableGitInfo = true
         publishDate = ["publishDate", "date"]
     [markup.goldmark.renderer]
         unsafe = true
+
+
+[languages]
+    [languages.ru]
+        languagedirection = 'ltr'
+        title = 'Русский'
+        weight = 1
