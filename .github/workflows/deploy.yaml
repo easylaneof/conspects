@@ -7,14 +7,12 @@ on:
   workflow_dispatch:
 
 jobs:
-  update:
-    runs-on: ubuntu-latest
-
+  deploy:
+    runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@v2
         with:
-          repository: easylaneof/conspects-deploy
-          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
 
       - name: Pull & update submodules recursively
         run: |
@@ -27,14 +25,6 @@ jobs:
           git add --all
           git commit -m "Update submodules" || echo "No changes to commit"
           git push
-
-  deploy:
-    runs-on: ubuntu-18.04
-    steps:
-      - uses: actions/checkout@v2
-        with:
-          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
-          submodules: recursive
 
       - name: Build Link Index
         uses: jackyzha0/hugo-obsidian@v2.18
