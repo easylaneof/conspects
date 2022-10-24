@@ -1,4 +1,4 @@
-baseURL = "https://easylaneof.github.io/conspects-deploy/"
+baseURL = "https://easylaneof.github.io/conspects/"
 languageCode = "ru-ru"
 googleAnalytics = "G-XYFD95KB4J"
 relativeURLs = false
