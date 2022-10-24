@@ -1,5 +1,3 @@
-#verilog
-
 ```
 module hello_world_tb;
   initial begin
